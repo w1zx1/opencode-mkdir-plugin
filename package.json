@@ -1,0 +1,25 @@
+{
+  "name": "opencode-mkdir-plugin",
+  "version": "0.1.0",
+  "description": "OpenCode TUI plugin: /mkdir creates a directory and changes the working directory into it.",
+  "type": "module",
+  "license": "MIT",
+  "exports": {
+    "./tui": "./src/tui.ts"
+  },
+  "files": [
+    "src",
+    "README.md",
+    "install.ps1"
+  ],
+  "keywords": [
+    "opencode",
+    "opencode-plugin",
+    "tui",
+    "mkdir",
+    "cd"
+  ],
+  "dependencies": {
+    "@opencode/plugin": "^2.2.5"
+  }
+}
