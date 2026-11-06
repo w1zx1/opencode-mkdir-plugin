@@ -31,9 +31,6 @@ export default Plugin.define({
           id: "mkdir",
           title: "Create directory and move into it",
           description: "Create directory and move into it",
-          group: "Directory",
-          palette: true,
-          suggested: true,
           slash: { name: "mkdir", arguments: true },
           run: async (input) => {
             const name = unquote(input ?? "")

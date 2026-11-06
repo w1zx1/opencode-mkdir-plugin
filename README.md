@@ -61,7 +61,7 @@ The path may be absolute or relative to the current working directory. A leading
 
 ## Behavior
 
-- Registers a global slash command `/mkdir` with a `Directory` group entry in the command palette.
+- Registers a global slash command `/mkdir`. It is intentionally not added to the `Ctrl+P` command palette.
 - Resolves the base directory from the active session's directory; if there is no active session, it uses the TUI's current location (the directory selected via `/cd`).
 - Creates missing parent directories as needed (`mkdir -p` semantics).
 - Dispatches the built-in `session.cd` command for the target path, so the switch follows exactly the same logic as the native `/cd`: the location changes on the home screen, and an open session is moved to the new directory.
